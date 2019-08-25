@@ -1,0 +1,14 @@
+.icon-bar-container{
+    display: grid;
+    font-size: 3em;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows: 1fr;
+    opacity: .5;
+}
+.icon{
+    transition: 1s;
+}
+.icon:hover{
+    color: white;
+    transition: 2s;
+}
