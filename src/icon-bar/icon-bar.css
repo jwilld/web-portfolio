@@ -3,6 +3,7 @@
     font-size: 3em;
     grid-template-columns:repeat(5,1fr);
     grid-template-rows: 1fr;
+    grid-gap: 2vw;
     opacity: .7;
     text-align: center;
 }
@@ -10,6 +11,6 @@
     transition: 1s;
 }
 .icon:hover{
-    color: white;
+    color: rgb(216, 214, 214);
     transition: 2s;
 }
