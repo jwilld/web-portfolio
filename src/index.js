@@ -6,27 +6,23 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
-  faLinkedin,
-  faGithubSquare,
+  faLinkedinIn,
+  faGithub,
   faInstagram,
-  faTwitterSquare,
-  faYoutubeSquare
+  faTwitter,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCheckSquare,
-  faCoffee,
-  faFile,
+  faFile
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   fab,
-  faCheckSquare,
-  faCoffee,
   faFile,
-  faLinkedin,
-  faGithubSquare,
+  faLinkedinIn,
+  faGithub,
   faInstagram,
-  faTwitterSquare,
-  faYoutubeSquare
+  faTwitter,
+  faYoutube
 );
 
 ReactDOM.render(

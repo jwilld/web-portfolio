@@ -3,7 +3,8 @@
     font-size: 3em;
     grid-template-columns:repeat(5,1fr);
     grid-template-rows: 1fr;
-    opacity: .5;
+    opacity: .7;
+    text-align: center;
 }
 .icon{
     transition: 1s;

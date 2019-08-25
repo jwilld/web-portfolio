@@ -5,10 +5,10 @@ import "./icon-bar.css";
 class IconBar extends React.Component {
   render() {
     let brandIcons = [
-      "github-square",
-      "linkedin",
-      "youtube-square",
-      "twitter-square",
+      "github",
+      "linkedin-in",
+      "youtube",
+      "twitter",
       "instagram"
     ];
 

@@ -34,9 +34,25 @@ class LandingPage extends Component {
     };
   }
   render() {
+//     const landingTitleParts = ['JWill','Designed']
+//     const handlers = [this.handleMouseHover,this.state.handleMouseHoverTwo]
+
+//     let JwillDesignedTitle =
+//     landingTitleParts.map((part,i)  => { 
+//       return(
+//       <span onMouseEnter = {handlers[i]}
+//             onMouseLeave = {handlers[i]}
+//             className = { `${part.toLowerCase()}-text`}
+//       >{part}</span>
+//       )
+//     }
+// )
+
+
     return (
       <div className="landing-container">
         <Link to="/" className="jwill-designed-title">
+        {/* {JwillDesignedTitle} */}
           <span
             onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}
