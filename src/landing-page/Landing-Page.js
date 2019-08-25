@@ -5,7 +5,7 @@ import "./landing-page.css";
 import JwillHover from "./jwill-hover/Jwill-Hover";
 import DesignedHover from "./designed-hover/Designed-Hover";
 import IconBar from '../icon-bar/Icon-Bar'
-import MainPage from '../main-page/Main-Page'
+
 
 class LandingPage extends Component {
   constructor() {

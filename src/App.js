@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Route exact path="/" component={LandingPage} />
-        <Route exact path='/main' component = {MainPage}/>
+        <Route  path='/main' component = {MainPage}/>
       </div>
     );
 
