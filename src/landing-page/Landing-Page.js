@@ -52,7 +52,7 @@ class LandingPage extends Component {
 
     return (
       <div className="landing-container">
-        <Link to="/main/portfolio" className="jwill-designed-title">
+        <Link to="/main/" className="jwill-designed-title">
         {/* {JwillDesignedTitle} */}
           <span
             onMouseEnter={this.handleMouseHover}

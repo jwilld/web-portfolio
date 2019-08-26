@@ -1,24 +1,26 @@
 import React from "react";
-import { Route } from 'react-router-dom'
+import { Route } from "react-router-dom";
 import "./main-page.css";
 import IconBar from "../icon-bar/Icon-Bar";
-import Portfolio from "../portfolio/Portfolio"
-import Blog from '../blog/Blog'
+import Portfolio from "../portfolio/Portfolio";
+import Blog from "../blog/Blog";
+import MainNavBar from "../nav-bar/Nav-Bar";
 
 class MainPage extends React.Component {
   render() {
     return (
       <div className="main-container">
-        <Blog/>
         <div className="bottom-nav-container">
-          <IconBar/>
+          <IconBar />
         </div>
-        <div className='nav-title
-        '>
-        </div>
-        <div className='portfolio-container'>
-        <Route exact path='/main/portfolio' component={Portfolio}/>
-
+        <MainNavBar />
+        <div
+          className="nav-title
+        "
+        ></div>
+        <div className="portfolio-container">
+          <Route exact path="/main/portfolio" component={Portfolio} />
+          <Route exact path="/main/blog" component={Blog} />
         </div>
       </div>
     );
