@@ -12,9 +12,9 @@ class IconBar extends React.Component {
       "instagram"
     ];
 
-    let iconBar = brandIcons.map(icon => (
-      <div>
-        <FontAwesomeIcon className='icon' icon={["fab", `${icon}`]} />
+    let iconBar = brandIcons.map((icon,i) => (
+      <div key={i}>
+        <FontAwesomeIcon key = {i} className='icon' icon={["fab", `${icon}`]} />
       </div>
     ));
     return (

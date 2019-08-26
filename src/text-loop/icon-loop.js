@@ -13,9 +13,9 @@ class IconLoop extends React.Component{
             "html5"
           ];
       
-          let iconLoop = brandIcons.map(icon => (
-            <div>
-              <FontAwesomeIcon className='icon' icon={["fab", `${icon}`]} />
+          let iconLoop = brandIcons.map((icon,i ) => (
+            <div key={i}>
+              <FontAwesomeIcon key={i} className='icon' icon={["fab", `${icon}`]} />
             </div>
           ));
 
