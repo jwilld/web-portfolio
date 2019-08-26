@@ -1,5 +1,5 @@
 import React from "react";
-import "./portfolio.css";import { statement } from "@babel/template";
+import "./portfolio.css";
 
 import Modal from "react-modal";
 import { CSSTransition } from "react-transition-group";
