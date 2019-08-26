@@ -3,7 +3,6 @@
   grid-gap: 5vh;
   grid-template-columns: repeat(3, 9rem);
   grid-auto-rows: 1fr;
-  /* border: 2px solid black; */
 }
 .search-box::after {
   content: "";

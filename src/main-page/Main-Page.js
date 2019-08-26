@@ -5,6 +5,7 @@ import IconBar from "../icon-bar/Icon-Bar";
 import Portfolio from "../portfolio/Portfolio";
 import Blog from "../blog/Blog";
 import MainNavBar from "../nav-bar/Nav-Bar";
+import Home from "../home/Home"
 
 class MainPage extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class MainPage extends React.Component {
         <div className="portfolio-container">
           <Route exact path="/main/portfolio" component={Portfolio} />
           <Route exact path="/main/blog" component={Blog} />
+          <Route exact path="/main/home" component={Home}/>
         </div>
       </div>
     );

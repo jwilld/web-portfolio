@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./landing-page.css";
 import JwillHover from "./jwill-hover/Jwill-Hover";
@@ -52,7 +52,7 @@ class LandingPage extends Component {
 
     return (
       <div className="landing-container">
-        <Link to="/main/" className="jwill-designed-title">
+        <Link to="/main/home" className="jwill-designed-title">
         {/* {JwillDesignedTitle} */}
           <span
             onMouseEnter={this.handleMouseHover}
