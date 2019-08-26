@@ -39,6 +39,7 @@ class Portfolio extends React.Component {
         classNames='modal-box'
         unmountOnExit
         appear
+
         >
         <Modal isOpen={true} contentLabel="test-modal">
           <button onClick={this.handleShowModal}> Exit View</button>

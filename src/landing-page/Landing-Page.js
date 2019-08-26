@@ -5,6 +5,7 @@ import "./landing-page.css";
 import JwillHover from "./jwill-hover/Jwill-Hover";
 import DesignedHover from "./designed-hover/Designed-Hover";
 import IconBar from '../icon-bar/Icon-Bar'
+import IconLoop from '../text-loop/icon-loop.js'
 
 
 class LandingPage extends Component {
@@ -51,7 +52,7 @@ class LandingPage extends Component {
 
     return (
       <div className="landing-container">
-        <Link to="/" className="jwill-designed-title">
+        <Link to="/main/portfolio" className="jwill-designed-title">
         {/* {JwillDesignedTitle} */}
           <span
             onMouseEnter={this.handleMouseHover}
@@ -68,7 +69,6 @@ class LandingPage extends Component {
             Designed
           </span>
         </Link>
-        <IconBar/>
         <div className="background-container">
           <CSSTransition
             in={this.state.hovering}
@@ -92,6 +92,8 @@ class LandingPage extends Component {
         </div>
 
 
+        <IconBar/>
+        <IconLoop/>
       </div>
     );
   }

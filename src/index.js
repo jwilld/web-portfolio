@@ -14,7 +14,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faFile
-} from "@fortawesome/free-solid-svg-icons";
+} 
+from "@fortawesome/free-solid-svg-icons";
 library.add(
   fab,
   faFile,
