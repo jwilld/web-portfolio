@@ -9,6 +9,12 @@
   grid-template-columns: repeat(3, 9rem);
   grid-auto-rows: 1fr;
 }
+@media only screen and (max-width:760px){
+    .portfolio-grid{
+        grid-template-columns: repeat(3,5rem);
+    }
+}
+
 
 .portfolio-grid::after {
   content: "";
