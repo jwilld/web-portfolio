@@ -52,6 +52,10 @@ class LandingPage extends Component {
 
     return (
       <div className="landing-container">
+        <div className='title-container'>
+          <div className='welcome-message'>
+            Hey I'm
+          </div>
         <Link to="/main/home" className="jwill-designed-title">
         {/* {JwillDesignedTitle} */}
           <span
@@ -59,16 +63,20 @@ class LandingPage extends Component {
             onMouseLeave={this.handleMouseHover}
             className="jwill-text"
           >
-            JWill
+            Jerry
           </span>
           <span
             className="designed-text"
             onMouseEnter={this.handleMouseHoverTwo}
             onMouseLeave={this.handleMouseHoverTwo}
           >
-            Designed
+          &nbsp;Davidson
           </span>
         </Link>
+        <div className='web-developer'>
+            a web developer!
+          </div>
+        </div>
         <div className="background-container">
           <CSSTransition
             in={this.state.hovering}
@@ -92,7 +100,7 @@ class LandingPage extends Component {
         </div>
 
 
-        <IconBar/>
+        <IconBar/> 
         <IconLoop/>
       </div>
     );

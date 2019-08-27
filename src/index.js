@@ -13,7 +13,8 @@ import {
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faFile
+  faFile,
+  faPlaneArrival
 } 
 from "@fortawesome/free-solid-svg-icons";
 library.add(
@@ -23,7 +24,8 @@ library.add(
   faGithub,
   faInstagram,
   faTwitter,
-  faYoutube
+  faYoutube,
+  faPlaneArrival
 );
 
 ReactDOM.render(

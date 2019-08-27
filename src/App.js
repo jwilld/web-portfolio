@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+        {/* <Route render={() => <Redirect to={{ pathname: "/" }} />} /> */}
         <Route exact path="/" component={LandingPage} />
         <Route path="/main" component={MainPage} />
       </div>
