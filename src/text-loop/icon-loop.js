@@ -1,5 +1,6 @@
 import React from 'react'
 import TextLoop from "react-text-loop"
+import './icon-loop.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class IconLoop extends React.Component{
@@ -15,7 +16,7 @@ class IconLoop extends React.Component{
       
           let iconLoop = brandIcons.map((icon,i ) => (
             <div key={i}>
-              <FontAwesomeIcon key={i} className='icon' icon={["fab", `${icon}`]} />
+              <FontAwesomeIcon key={i} className='icon loop-icon' icon={["fab", `${icon}`]} />
             </div>
           ));
 

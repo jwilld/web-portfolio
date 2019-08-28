@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: #eae7dc;
-} */
+}
 
 .landing-container {
   height: 100vh;
@@ -23,13 +23,15 @@
   align-items: flex-start;
   justify-content: center;
   font-size: 3vh;
+  color: #8E8D8A;
 }
 
 .web-developer {
-  grid-column: 3;
-  grid-row: 3;
-  display: flex;
-  align-items: flex-end;
+    grid-column: 3;
+    grid-row: 3;
+    display: flex;
+    align-items: flex-end;
+    color: #8E8D8A;
 }
 .icon-loop {
   grid-row: 2;
@@ -81,6 +83,7 @@
   justify-content: center;
   font-size: 5vh;
   padding: 4vh 0 5vh 0;
+  color: #E85A4F;
 }
 
 .jwill-text:hover {

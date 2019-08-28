@@ -8,8 +8,9 @@
 }
 .icon{
     transition: 1s;
+    color: #E98074;
 }
 .icon:hover{
-    color: rgb(216, 214, 214);
+    color: #8E8D8A;
     transition: 2s;
 }

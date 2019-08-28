@@ -1,6 +1,7 @@
 .designed-container{
-    background-color:rgba(87, 164, 87, 0.557) ;
+    background-color: black;
     z-index: -1;
+    color: white;
 }
 
 
