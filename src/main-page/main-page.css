@@ -6,6 +6,12 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media only screen and (max-height:700px){
+    .main-container{
+        height: 85vh;
+    }
+}
+
 .landing-redirect {
   grid-row: 1;
   grid-column: 1;
