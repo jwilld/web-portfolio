@@ -23,8 +23,8 @@ class Portfolio extends React.Component {
     };
     render() {
         const portfolios = ["", "", "", "", "", ""];
-        let portfolioBox = portfolios.map(portfolio => (
-            <div onClick={this.handleShowModal} className="portfolio-box">
+        let portfolioBox = portfolios.map((portfolio,i) => (
+            <div key={i} onClick={this.handleShowModal} className="portfolio-box">
         {portfolio}
       </div>
     ));
@@ -39,7 +39,6 @@ class Portfolio extends React.Component {
         classNames='modal-box'
         unmountOnExit
         appear
-
         >
         <Modal isOpen={true} contentLabel="test-modal">
           <button class='modal-exit-button' onClick={this.handleShowModal}> Exit View</button>

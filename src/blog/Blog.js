@@ -23,8 +23,8 @@ class Blog extends React.Component {
     };
   render() {
     const blogs = ["", "", "", "", "", ""];
-    let blogBox = blogs.map(blog => (
-      <div onClick={this.handleShowModal} className="blog-box">
+    let blogBox = blogs.map((blog,i ) => (
+      <div key = {i}onClick={this.handleShowModal} className="blog-box">
         {blog}
       </div>
     ));

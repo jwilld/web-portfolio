@@ -11,7 +11,7 @@ class About extends React.Component {
         <div className="bio-name">
           <p>Jerry Davidson</p>
         </div>
-          <div clasName='.bio-text'>
+          <div className='.bio-text'>
             <p>
               bio Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Tempore nisi perspiciatis optio, architecto, cum at ex asperiores

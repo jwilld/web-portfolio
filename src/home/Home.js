@@ -3,7 +3,7 @@ import "./home.css";
 
 class Home extends React.Component {
   render() {
-    const randomFetch = ["", ""];
+    // const randomFetch = ["", ""];
 
     return (
       <div className="home-container">
