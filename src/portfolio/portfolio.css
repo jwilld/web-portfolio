@@ -53,3 +53,16 @@
   opacity: 0;
   transition: opacity 1s;
 }
+
+.modal-exit-button{
+    background-color: #E98074;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 2em; width: 7em;
+}
+
+.modal-exit-button:focus{
+    outline:0;
+    background-color: rgb(234, 100, 85);
+}

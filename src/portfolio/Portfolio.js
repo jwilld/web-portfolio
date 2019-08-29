@@ -42,7 +42,7 @@ class Portfolio extends React.Component {
 
         >
         <Modal isOpen={true} contentLabel="test-modal">
-          <button onClick={this.handleShowModal}> Exit View</button>
+          <button class='modal-exit-button' onClick={this.handleShowModal}> Exit View</button>
         </Modal>
 
         </CSSTransition>

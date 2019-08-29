@@ -43,7 +43,7 @@ class Blog extends React.Component {
 
         >
         <Modal isOpen={true} contentLabel="test-modal">
-          <button onClick={this.handleShowModal}> Exit View</button>
+          <button className='modal-exit-button' onClick={this.handleShowModal}> Exit View</button>
         </Modal>
 
         </CSSTransition>
