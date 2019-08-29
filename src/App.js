@@ -11,7 +11,7 @@ class App extends React.Component {
       " font-weight:bold; font-size:30px;text-shadow: 1px 1px 2px;",
     )
     console.log(
-      "%cI try to keep this place clean.",
+      "%cIm still working on the error above, I try to keep this place clean.",
       "font-weight:bold; font-size:15px"
     );
   }
