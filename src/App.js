@@ -8,9 +8,14 @@ class App extends React.Component {
   componentDidMount() {
     console.log(
       "%cHey welcome to my console!",
-      " font-weight:bold; font-size:50px;text-shadow: 1px 1px 2px;"
+      " font-weight:bold; font-size:30px;text-shadow: 1px 1px 2px;",
+    )
+    console.log(
+      "%cI try to keep this place clean.",
+      "font-weight:bold; font-size:15px"
     );
   }
+  
   render() {
     return (
       <div className="App">
