@@ -27,6 +27,11 @@
 .blog-input::placeholder{
     opacity: 0.3;
 }
+.blog-input:focus{
+    outline: 0;
+    border:4px solid rgba(233, 128, 116, 0.801);
+
+}
 
 
 .blog-box {
