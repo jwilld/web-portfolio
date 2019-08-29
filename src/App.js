@@ -5,10 +5,11 @@ import { Route } from "react-router-dom";
 import MainPage from "./main-page/Main-Page";
 
 class App extends React.Component {
-  componentDidMount(){
+  componentDidMount() {
     console.log(
-      '%c Hey welcome to my console!',' font-weight:bold; font-size:20px;'
-    )
+      "%cHey welcome to my console!",
+      " font-weight:bold; font-size:50px;text-shadow: 1px 1px 2px;"
+    );
   }
   render() {
     return (
