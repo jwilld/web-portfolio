@@ -2,6 +2,7 @@ import React from "react";
 import "./blog.css";
 import Modal from "react-modal";
 import { CSSTransition } from "react-transition-group";
+import axios from 'axios'
 
 
 Modal.setAppElement('#root')
@@ -10,7 +11,16 @@ class Blog extends React.Component {
     constructor() {
         super();
         this.state = {
-            showModal: false
+            showModal: false,
+            blogPosts: [
+              {
+                description:'',
+                photos:[],
+                post_url:'',
+                title:''
+
+              }
+            ],
         };
     }
     handleShowModal = () => {
@@ -21,11 +31,20 @@ class Blog extends React.Component {
             showModal: !state.showModal
         };
     };
+    componentDidMount = () =>{
+        axios.get("http://127.0.0.1:8000/api/blogpost/").then(res => {
+          this.setState({blogPosts:res.data})
+        });
+      }
   render() {
-    const blogs = ["", "", "", "", "", ""];
+    console.log(this.state.blogPosts[0].photos[0])
+    const blogs = this.state.blogPosts
     let blogBox = blogs.map((blog,i ) => (
+      
       <div key = {i}onClick={this.handleShowModal} className="blog-box">
-        {blog}
+        <span>
+          {blog.title}
+        </span>
       </div>
     ));
     return (
