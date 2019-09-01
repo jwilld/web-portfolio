@@ -1,53 +1,37 @@
 import React from "react";
 import "./portfolio.css";
-
-import Modal from "react-modal";
-import { CSSTransition } from "react-transition-group";
-
-Modal.setAppElement('#root')
+import ModalOverlay from "../modals/modal";
 
 class Portfolio extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            showModal: false
-        };
-    }
-    handleShowModal = () => {
-        this.setState(this.toggleShowModal);
+  constructor() {
+    super();
+    this.state = {
+      showModal: false
     };
-    toggleShowModal = state => {
-        return {
-            showModal: !state.showModal
-        };
+  }
+  handleShowModal = () => {
+    this.setState(this.toggleShowModal);
+  };
+  toggleShowModal = state => {
+    return {
+      showModal: !state.showModal
     };
-    render() {
-        const portfolios = ["", "", "", "", "", ""];
-        let portfolioBox = portfolios.map((portfolio,i) => (
-            <div key={i} onClick={this.handleShowModal} className="portfolio-box">
+  };
+  render() {
+    const portfolios = ["", "", "", "", "", ""];
+    let portfolioBox = portfolios.map((portfolio, i) => (
+      <div key={i} onClick={this.handleShowModal} className="portfolio-box">
         {portfolio}
       </div>
     ));
     return (
-        <div className="portfolio">
+      <div className="portfolio">
         <div>Projects</div>
         <div className="portfolio-grid">{portfolioBox}</div>
-
-        <CSSTransition
-        in={this.state.showModal}
-        timeout={750}
-        classNames='modal-box'
-        unmountOnExit
-        appear
-        >
-        <Modal isOpen={true} contentLabel="test-modal">
-          <button class='modal-exit-button' onClick={this.handleShowModal}> Exit View</button>
-        </Modal>
-
-        </CSSTransition>
-
+        <ModalOverlay show={this.state.showModal} 
+                       exit={this.handleShowModal} />
       </div>
     );
-}
+  }
 }
 export default Portfolio;

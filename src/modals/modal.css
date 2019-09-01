@@ -1,0 +1,29 @@
+.modal-box-enter .modal-box-appear {
+    opacity: 0;
+    transition: all 2s;
+  }
+  .modal-box-enter-active .modal-box-appear-active {
+    opacity: 1;
+    transition: all opacity 1s;
+  }
+  .modal-box-exit {
+    opacity: 1;
+  }
+  .modal-box-exit-active {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .modal-exit-button{
+      background-color: #E98074;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      height: 2em; width: 7em;
+  }
+  
+  .modal-exit-button:focus{
+      outline:0;
+      background-color: rgb(234, 100, 85);
+  }
+  

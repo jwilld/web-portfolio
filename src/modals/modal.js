@@ -1,34 +1,32 @@
 import React from "react";
-import ReactDom from "react-dom";
 import Modal from "react-modal";
+import { CSSTransition } from "react-transition-group";
+import './modal.css'
 
-Modal.setAppElement('#root')
+Modal.setAppElement("#root");
 
 class ModalOverlay extends React.Component {
-        constructor() {
-        super();
-        this.state = {
-            showModal: false
-        };
-    }
-    handleShowModal = () => {
-        this.setState(this.toggleShowModal);
-    };
-    toggleShowModal = state => {
-        return {
-            showModal: !state.showModal
-        };
-    };
-
   render() {
     return (
       <div>
-        <Modal
-          isOpen={this.state.showModal}
-          contentLabel="box overlay example"
+        <CSSTransition
+          in={this.props.show}
+          timeout={750}
+          classNames="modal-box"
+          unmountOnExit
+          appear
         >
-          <button onClick={this.handleShowModal}>Close Modal</button>
-        </Modal>
+          <Modal isOpen={true} contentLabel="test-modal">
+            <button
+              className="modal-exit-button"
+              onClick={this.props.exit}
+            >
+              {" "}
+              Exit View
+            </button>
+            <p>{this.props.des}</p>
+          </Modal>
+        </CSSTransition>
       </div>
     );
   }
