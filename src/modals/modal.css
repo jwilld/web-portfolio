@@ -27,3 +27,13 @@
       background-color: rgb(234, 100, 85);
   }
   
+  .production-link{
+    color: rgb(234, 100, 85);
+    text-decoration: none;
+    transition: 1s;
+  }
+
+  .production-link:hover{
+    color: rgba(234, 100, 85, 0.249);
+    transition: 1s;
+  }
