@@ -8,17 +8,17 @@ class About extends React.Component {
         <div className="bio-container">
           <div className="bio-photo"></div>
         </div>
-        <div className="bio-name">
-          <p>Jerry Davidson</p>
-        </div>
-          <div className='.bio-text'>
-            <p>
-              bio Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Tempore nisi perspiciatis optio, architecto, cum at ex asperiores
-              quidem autem provident, voluptas dolorem? Cupiditate fugit velit
-              rem sint iure nesciunt et.
+        <div className='bio-text'>
+          <p>
+            My creative mind, constant need for progression and ability to handle challenges are necessary to traverse the world of software engineering. Any problem can be solved, the question is “how?”.
             </p>
-          </div>
+        </div>
+        <div>
+          <a  className='resume-link' 
+          href='https://docs.google.com/document/d/1ec650FAwyhkrB83kmnincVdIz2GTJxGt7NvCIliYgjk/edit?usp=sharing'
+          target='_blank'>
+            <span className='read-more'>Resume</span></a>
+        </div>
       </div>
     );
   }

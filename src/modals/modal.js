@@ -16,7 +16,7 @@ class ModalOverlay extends React.Component {
           unmountOnExit
           appear
         >
-          <Modal isOpen={true} contentLabel="test-modal">
+          <Modal className='modal-overlay' isOpen={true} contentLabel="test-modal">
             <button className="modal-exit-button" onClick={this.props.exit}>
               {" "}
               Exit View

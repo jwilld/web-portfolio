@@ -56,8 +56,9 @@ class LandingPage extends Component {
           <div className='welcome-message'>
             Hey I'm
           </div>
-        <Link to="/main/home" className="jwill-designed-title">
+        <Link to="/main/about" className="jwill-designed-title">
         {/* {JwillDesignedTitle} */}
+        <div className='landing-name-title'>
           <span
             onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}
@@ -72,6 +73,7 @@ class LandingPage extends Component {
           >
           &nbsp;Davidson
           </span>
+          </div>
         </Link>
         <div className='web-developer'>
             a web developer!

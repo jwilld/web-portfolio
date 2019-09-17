@@ -7,11 +7,8 @@ class DesignedHover extends React.Component{
         return(
             <div className='designed-container'>
                  <div className='designed-containerf'>
-                     <h1>My projects!</h1>
-                     <p> some image</p>
-                     <p> some image</p>
-                     <p> some image</p>
-                     <p> some image</p>
+                     <h1></h1>
+
     
                      </div>   
             </div>

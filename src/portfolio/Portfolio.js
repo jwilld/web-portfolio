@@ -56,9 +56,9 @@ class Portfolio extends React.Component {
     ));
     return (
       <div className="portfolio">
-        <div>Projects</div>
+        <h1>Projects</h1>
         <div className="portfolio-grid">{portfolioBox}</div>
-        <ModalOverlay
+        <ModalOverlay 
           show={this.state.showModal}
           exit={this.handleShowModal}
           des={this.state.description}

@@ -21,11 +21,10 @@ class MainPage extends React.Component {
         <div className="bottom-nav-container">
           <IconBar />
         </div>
-        <MainNavBar />
-        <div
-          className="nav-title
-        "
-        ></div>
+        <MainNavBar className = "main-nav-bar" />
+        <div className="nav-title">
+          <span>Jerry Davidson</span>
+        </div>
         <div className='bio-container-main'>
         <Route exact path='/main/about' component={About}/>
         </div>

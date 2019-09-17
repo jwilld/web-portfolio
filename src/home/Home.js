@@ -8,8 +8,6 @@ class Home extends React.Component {
     return (
       <div className="home-container">
         <div className="home-title">
-          <h4>Jerry Davidson</h4>
-          <p>some sort of line that explains something about code and myself</p>
         </div>
       </div>
     );

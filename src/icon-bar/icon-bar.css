@@ -8,9 +8,12 @@
 }
 .icon{
     transition: 1s;
-    color: #E98074;
+    color: #E85A4F;
 }
 .icon:hover{
     color: #8E8D8A;
     transition: 2s;
+}
+.resume-link{
+    text-decoration: none;
 }

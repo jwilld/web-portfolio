@@ -20,6 +20,13 @@
       border-radius: 10px;
       color: white;
       height: 2em; width: 7em;
+      transition: 1s;
+      font-weight: bold;
+  }
+
+  .modal-exit-button:hover{
+    transition: 1s;
+    background-color: #8E8D8A;
   }
   
   .modal-exit-button:focus{
@@ -37,3 +44,21 @@
     color: rgba(234, 100, 85, 0.249);
     transition: 1s;
   }
+
+.modal-overlay{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: white;
+    padding: 5vh;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.modal-overlay:focus{
+  outline: 0;
+}
+
+

@@ -1,7 +1,11 @@
-
+.portfolio-text{
+  font-weight: bold;
+  
+}
 .portfolio {
   text-align: center;
 }
+
 
 .portfolio-grid {
   display: grid;
@@ -9,6 +13,8 @@
   grid-template-columns: repeat(3, 9rem);
   grid-auto-rows: 1fr;
 }
+
+
 @media only screen and (max-width:760px){
     .portfolio-grid{
         grid-template-columns: repeat(3,5rem);
@@ -23,6 +29,8 @@
 }
 
 .portfolio-box {
+  font-size: 1.5vh;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,5 +44,12 @@
   transition: 1s;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.523),
     0 10px 10px -5px rgba(0, 0, 0, 0.585);
+}
+
+.modal-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
