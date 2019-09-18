@@ -10,14 +10,14 @@ class Blog extends React.Component {
       showModal: false,
       blogPosts: [
         {
-          description: "",
+          description: "Loading...",
           photos: [],
-          post_url: "",
-          title: ""
+          post_url: "Loading...",
+          title: "Loading..."
         }
       ],
-      description: "",
-      current: ""
+      description: "Loading...",
+      current: "Loading..."
     };
   }
 

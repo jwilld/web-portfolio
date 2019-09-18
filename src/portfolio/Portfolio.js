@@ -10,16 +10,16 @@ class Portfolio extends React.Component {
       showModal: false,
       projectPosts: [
         {
-          description: "",
+          description: "Loading...",
           photos: [],
-          post_url: "",
-          title: "",
-          github_url: ""
+          post_url: "Loading...",
+          title: "Loading...",
+          github_url: "Loading..."
         }
       ],
-      description: "",
-      title:"",
-      post_url:"",
+      description: "Loading...",
+      title:"Loading...",
+      post_url:"Loading...",
     };
   }
   handleShowModal = (description,title,post_url) => {
