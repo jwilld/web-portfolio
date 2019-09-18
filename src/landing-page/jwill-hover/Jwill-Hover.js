@@ -5,8 +5,6 @@ class JwillHover extends React.Component {
   render() {
     return (
       <div className="jwill-container">
-        <h1></h1>
-
       </div>
     );
   }

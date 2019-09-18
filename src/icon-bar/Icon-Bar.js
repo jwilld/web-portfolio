@@ -14,7 +14,7 @@ class IconBar extends React.Component {
 
     let iconBar = brandIcons.map((icon,i) => (
       <div key={i}>
-        <a href={icon[1]} target='_blank'><FontAwesomeIcon key = {i} className='icon' icon={["fab", `${icon[0]}`]} /></a>
+        <a rel='noopener noreferrer'href={icon[1]} target='_blank'><FontAwesomeIcon key = {i} className='icon' icon={["fab", `${icon[0]}`]} /></a>
       </div>
     ));
     return (
