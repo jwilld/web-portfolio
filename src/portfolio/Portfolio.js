@@ -41,7 +41,6 @@ class Portfolio extends React.Component {
     axios
       .get("https://jerrydback.herokuapp.com/api/projectpost/?format=json")
       .then(res => {
-        console.log(res);
         this.setState({ projectPosts: res.data });
       })
       .catch(e => console.log(e));
