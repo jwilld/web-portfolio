@@ -127,4 +127,34 @@ body {
   opacity: 0;
   transition: opacity 1s;
 }
+.landing-enter-container{
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  justify-content: center;
+  align-items: center;
 
+  
+}
+
+.landing-enter{
+  text-decoration: none;
+  padding: .3em;
+  grid-row: 5;
+  text-align: center;
+  color: #E85A4F;
+  font-weight: bold;
+  width: 4em;
+  height: 1em;
+  transition: 1s;
+  background-color: #E85A4F;
+  color: rgb(234,231,221);
+  border: .3px solid #E85A4F;
+}
+
+.landing-enter:hover{
+  transition: 1s;
+  background-color: rgb(234,231,221);
+  color: #E85A4F;
+}

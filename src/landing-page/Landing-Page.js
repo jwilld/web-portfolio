@@ -36,19 +36,19 @@ class LandingPage extends Component {
     };
   }
   render() {
-//     const landingTitleParts = ['JWill','Designed']
-//     const handlers = [this.handleMouseHover,this.state.handleMouseHoverTwo]
+    //     const landingTitleParts = ['JWill','Designed']
+    //     const handlers = [this.handleMouseHover,this.state.handleMouseHoverTwo]
 
-//     let JwillDesignedTitle =
-//     landingTitleParts.map((part,i)  => { 
-//       return(
-//       <span onMouseEnter = {handlers[i]}
-//             onMouseLeave = {handlers[i]}
-//             className = { `${part.toLowerCase()}-text`}
-//       >{part}</span>
-//       )
-//     }
-// )
+    //     let JwillDesignedTitle =
+    //     landingTitleParts.map((part,i)  => { 
+    //       return(
+    //       <span onMouseEnter = {handlers[i]}
+    //             onMouseLeave = {handlers[i]}
+    //             className = { `${part.toLowerCase()}-text`}
+    //       >{part}</span>
+    //       )
+    //     }
+    // )
 
     return (
       <div className="landing-container">
@@ -56,26 +56,26 @@ class LandingPage extends Component {
           <div className='welcome-message'>
             Hey I'm
           </div>
-        <Link to="/main/about" className="jwill-designed-title">
-        {/* {JwillDesignedTitle} */}
-        <div className='landing-name-title'>
-          <span
-            onMouseEnter={this.handleMouseHover}
-            onMouseLeave={this.handleMouseHover}
-            className="jwill-text"
-          >
-            Jerry
+          <div className="jwill-designed-title">
+            {/* {JwillDesignedTitle} */}
+            <div className='landing-name-title'>
+              <span
+                onMouseEnter={this.handleMouseHover}
+                onMouseLeave={this.handleMouseHover}
+                className="jwill-text"
+              >
+                Jerry
           </span>
-          <span
-            className="designed-text"
-            onMouseEnter={this.handleMouseHoverTwo}
-            onMouseLeave={this.handleMouseHoverTwo}
-          >
-          &nbsp;Davidson
+              <span
+                className="designed-text"
+                onMouseEnter={this.handleMouseHoverTwo}
+                onMouseLeave={this.handleMouseHoverTwo}
+              >
+                &nbsp;Davidson
           </span>
+            </div>
           </div>
-        </Link>
-        <div className='web-developer'>
+          <div className='web-developer'>
             a web developer!
           </div>
         </div>
@@ -96,14 +96,19 @@ class LandingPage extends Component {
             unmountOnExit
             appear
           >
-            <DesignedHover/>
+            <DesignedHover />
           </CSSTransition>
-          
+
         </div>
 
+        <div className='landing-enter-container'>
 
-        <IconBar/> 
-        <IconLoop/>
+            <Link className='landing-enter' to="/main/about" >enter</Link>
+
+        </div>
+
+        <IconBar />
+        <IconLoop />
       </div>
     );
   }

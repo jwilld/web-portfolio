@@ -15,6 +15,7 @@ class About extends React.Component {
         </div>
         <div>
           <a  className='resume-link' 
+          rel="noopener noreferrer"
           href='https://docs.google.com/document/d/1ec650FAwyhkrB83kmnincVdIz2GTJxGt7NvCIliYgjk/edit?usp=sharing'
           target='_blank'>
             <span className='read-more'>Resume</span></a>
