@@ -7,6 +7,7 @@ class Portfolio extends React.Component {
   constructor() {
     super();
     this.state = {
+      loading: true,
       showModal: false,
       projectPosts: [
         {
@@ -41,7 +42,8 @@ class Portfolio extends React.Component {
     axios
       .get("https://jerrydback.herokuapp.com/api/projectpost/?format=json")
       .then(res => {
-        this.setState({ projectPosts: res.data });
+        this.setState({ projectPosts: res.data,loading:false });
+
       })
       .catch(e => console.log(e));
   };
@@ -56,7 +58,11 @@ class Portfolio extends React.Component {
     return (
       <div className="portfolio">
         <h1>Projects</h1>
+        { this.state.loading === true ?
+        <div className="portfolio-grid grid-animate">{portfolioBox}</div>
+        :
         <div className="portfolio-grid">{portfolioBox}</div>
+        }
         <ModalOverlay 
           show={this.state.showModal}
           exit={this.handleShowModal}

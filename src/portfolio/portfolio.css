@@ -53,3 +53,18 @@
   justify-content: center;
 }
 
+.grid-animate{
+  animation: flickerAnimation 1.5s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  12.5%   { opacity:.75; }
+  25% {opacity: .5}
+  37.5% {opacity: .25}
+  50%  { opacity:0; }
+  67.5%  { opacity:.25; }
+  75% { opacity:.5}
+  87.5% { opacity:.75}
+  100% { opacity:1; }
+}

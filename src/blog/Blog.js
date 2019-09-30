@@ -44,7 +44,6 @@ class Blog extends React.Component {
     axios
       .get("http://jerrydback.herokuapp.com/api/blogpost/?format=json")
       .then(res => {
-        console.log(res);
         this.setState({ blogPosts: res.data });
       })
       .catch(e => console.log(e));

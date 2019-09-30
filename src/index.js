@@ -10,7 +10,7 @@ import {
   faGithub,
   faInstagram,
   faTwitter,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faFile,
