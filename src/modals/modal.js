@@ -39,7 +39,7 @@ class ModalOverlay extends React.Component {
               </div>
               <div className='description-container'>
 
-                <p>{this.props.des}</p>
+                <article>{this.props.des}</article>
               </div>
               <div className='github-link-container'>
                 <a className="github-link"
