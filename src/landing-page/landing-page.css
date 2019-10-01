@@ -151,6 +151,9 @@ body {
   background-color: #E85A4F;
   color: rgb(234,231,221);
   border: .3px solid #E85A4F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-enter:hover{

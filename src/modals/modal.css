@@ -1,3 +1,30 @@
+.modal-grid{
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+.image-container{
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+}
+.github-link-container{
+  grid-row: 3;
+}
+
+.description-container{
+  grid-row: 2;
+}
+.title-link-container{
+  grid-row: 1;
+}
+
+.exit-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .modal-box-enter .modal-box-appear {
     opacity: 0;
     transition: all 2s;
@@ -34,10 +61,11 @@
       background-color: rgb(234, 100, 85);
   }
   
-  .production-link{
+  .production-link {
     color: rgb(234, 100, 85);
     text-decoration: none;
     transition: 1s;
+    font-weight: bold;
   }
 
   .production-link:hover{
@@ -62,6 +90,22 @@
 
 .modal-overlay:focus{
   outline: 0;
+}
+
+.github-link{
+  color: rgb(234, 100, 85);
+  text-decoration: none;
+  transition: 1s;
+  font-weight: bold;
+}
+
+.github-link:hover{
+  color: rgba(234, 100, 85, 0.249);
+  transition: 1s;
+}
+
+.modal-image{
+  width: 100%;
 }
 
 

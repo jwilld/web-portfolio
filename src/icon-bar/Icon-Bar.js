@@ -8,7 +8,7 @@ class IconBar extends React.Component {
       ["github",'https://github.com/jwilld'],
       ["linkedin-in", 'https://www.linkedin.com/in/jerry-davidson-3a62b8182/'],
       ["youtube",'https://www.youtube.com/channel/UCfGlfPbx8itcD4idUL-TtqA?view_as=subscriber'],
-      ["twitter",'https://twitter.com/home'],
+      ["twitter",'https://twitter.com/WillDJerry'],
       ["file",'https://docs.google.com/document/d/1ec650FAwyhkrB83kmnincVdIz2GTJxGt7NvCIliYgjk/edit?usp=sharing']
     ];
 

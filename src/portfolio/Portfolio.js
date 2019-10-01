@@ -21,15 +21,22 @@ class Portfolio extends React.Component {
       description: "Loading...",
       title:"Loading...",
       post_url:"Loading...",
+      url:"loading...",
+      github_url:'loading...',
+      photo:'loading...',
+
+
     };
   }
-  handleShowModal = (description,title,post_url) => {
+  handleShowModal = (description,title,post_url,github,photo) => {
     this.setState(this.toggleShowModal);
     if (this.state.showModal === false) {
       this.setState({
         description: description,
         title: title,
-        post_url:post_url
+        post_url:post_url,
+        github_url:github,
+        photo: photo
       });
     }
   };
@@ -46,12 +53,17 @@ class Portfolio extends React.Component {
 
       })
       .catch(e => console.log(e));
-  };
+    };
 
   render() {
-    const portfolios = this.state.projectPosts;
+    let portfolios = this.state.projectPosts;
     let portfolioBox = portfolios.map((portfolio, i) => (
-      <div key={i} onClick={() => this.handleShowModal(portfolio.description,portfolio.title,portfolio.post_url)} className="portfolio-box">
+      <div key={i} onClick={() => this.handleShowModal(
+      portfolio.description,
+      portfolio.title,
+      portfolio.post_url,
+      portfolio.github_url,
+      portfolio.photo)} className="portfolio-box">
         {portfolio.title}
       </div>
     ));
@@ -69,6 +81,8 @@ class Portfolio extends React.Component {
           des={this.state.description}
           title={this.state.title}
           postLink={this.state.post_url}
+          photo={this.state.photo}
+          github_url={this.state.github_url}
         />
       </div>
     );

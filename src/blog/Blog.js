@@ -74,7 +74,10 @@ class Blog extends React.Component {
           />
           <div className="search-box">
             {this.state.blogPosts.map((post, i) => {
-              if (post.title !== undefined) {
+              // if (post.title !== undefined) {
+              //   return(
+              //     null
+              //   )
                 if (post.title.toLowerCase().includes(this.state.current)) {
                   return (
                     <div
@@ -92,8 +95,14 @@ class Blog extends React.Component {
                     </div>
                   );
                 }
+                else{
+                  return(
+                    null
+                  )
+                }
               }
-            })}
+
+            )}
           </div>
         </div>
         <ModalOverlay
