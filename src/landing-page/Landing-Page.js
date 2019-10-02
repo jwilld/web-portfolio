@@ -103,7 +103,7 @@ class LandingPage extends Component {
 
         <div className='landing-enter-container'>
 
-            <Link className='landing-enter' to="/main/about" >enter</Link>
+            <Link className='landing-enter' to="/main/about" >Enter</Link>
 
         </div>
 
